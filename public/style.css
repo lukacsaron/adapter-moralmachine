@@ -38,6 +38,17 @@
     font-weight: 700;
  }
 
+ #questionCounter {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 1.2em;
+ }
+
+ #thankyou {
+    margin-bottom:200px;
+ }
+
  .summary-item {
             margin-bottom: 20px;
         }

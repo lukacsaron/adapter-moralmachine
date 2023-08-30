@@ -34,6 +34,11 @@ async function loadQuestion(index) {
         questionElement.textContent = data.question;
         yesButtonElement.textContent = data.choices.yes;
         noButtonElement.textContent = data.choices.no;
+        
+        // Update the question counter
+        const questionCounterElement = document.getElementById('questionCounter');
+        questionCounterElement.textContent = `${index + 1}/4 kérdés`;
+
     } catch (err) {
         console.error('Error loading question:', err);
     }
@@ -195,6 +200,7 @@ async function endSession() {
     document.getElementById('feedback').style.display = 'none';
     document.getElementById('nextButton').style.display = 'none';
     document.getElementById('summaryContainer').style.display = 'block';
+    document.getElementById('thankyou').style.display = 'block';
     document.getElementById('reloadButton').style.display = 'inline-block';
 }
 
