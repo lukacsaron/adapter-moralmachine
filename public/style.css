@@ -1,0 +1,314 @@
+ body {
+    font-family: 'Epilogue', sans-serif;
+ }
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+.margin-top-sm {
+    margin-top:10px;
+}
+
+.margin-top-md {
+    margin-top: 50px;
+}
+
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+ h1 {
+    font-weight: 700;
+ }
+
+ .summary-item {
+            margin-bottom: 20px;
+        }
+
+        #summaryContainer {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+#feedback {
+    margin-bottom: 25px;
+}
+
+@keyframes slideOut {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+#intro {
+    position: fixed;
+    z-index: 999999;
+    background: yellow;
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#intro.slide-out {
+    animation: slideOut .5s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+
+}
+
+.btn {
+    margin: 0 10px;
+}
+
+.btn-light {
+    border: 1px solid black;
+}
+
+.btn-adapter {
+    background-color: yellow;
+    color: black;
+    border-color: black;
+    border-radius: 30px;
+}
+
+.btn-lg {
+    padding: 10px 30px;
+}
+
+.btn-xl {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1em 2em;
+    border-radius: 100px;
+}
+
+@keyframes cursorBlink {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes btnGrowEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-grow-effect {
+    animation: btnGrowEffect 0.5s forwards;
+}
+
+
+#cursor {
+    display: none;
+    animation: cursorBlink 0.6s ease-in-out infinite alternate;
+    height: 20px;
+    position: absolute;
+    border-left: 10px solid black;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 2px;
+    margin: 10px 0;
+}
+
+.bar {
+    height: 30px;
+    background-color: #fff714;
+    width: 0%; /* Initial width */
+    position: relative;
+    transition: width 1s ease-in; /* Animation for bar growth */
+}
+
+.bar-label {
+    position: absolute;
+    left: 10px;
+    line-height: 30px;
+    color: black;
+    min-width: 200px;
+    text-align: left;
+}
+
+.overlay {
+    position: fixed;
+    max-width: 170px;
+    left: -50px;
+    top: 280px;
+    z-index: 99;
+}
+
+.right-overlay {
+    right: 170px;
+    left: inherit;
+    top: 130px;
+}
+
+.overlay img {
+    width: auto;
+    position: relative;
+    display: block;
+    width: 390px;
+}
+
+.fixed-bottom {
+    padding: 20px;
+    border-top: 1px solid black;
+    background: white;
+}
+
+.btn-inactive {
+    opacity: 0.2;
+}
+
+.logo {
+    height: 75px;
+}
+
+.timer-line {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    background-color: #fff714;
+    transition: width 60s linear;
+    z-index: 9999;
+}
+
+
+
+@media (min-width: 360px) and (max-width: 844px){
+    .btn-xl {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #question {
+        margin-top: 10px;
+    }
+
+    #feedback {
+        margin-bottom: 130px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .overlay {
+        display:none;
+    }
+    .margin-bottom {
+        margin-bottom: 30px;
+    }
+    #summaryContainer {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    .margin-top-md {
+        margin-top: 10px;
+    }
+  }
+
+@media (min-width: 481px) and (max-width: 767px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #question {
+        margin-top: 10px;
+    }
+
+    #feedback {
+        margin-bottom: 130px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .overlay {
+        display:none;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1180px){
+    h1 {
+        font-size: 3em;
+    }
+
+    .margin-top-md {
+        margin-top: 150px;
+    }
+
+    #question {
+        margin-top: 10px;
+    }
+
+    #feedback {
+        margin-bottom: 130px;
+        font-size: 1.5em;
+    }
+
+    .logo {
+        height: 75px;
+        width: 150px;
+        margin-left: 20px;
+    }
+
+    .overlay {
+        display:none;
+    }
+    .margin-bottom {
+        margin-bottom: 30px;
+    }
+    #summaryContainer {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    #cursor {
+        display: none;
+        animation: cursorBlink 0.6s ease-in-out infinite alternate;
+        height: 20px;
+        margin-top: 7px;
+        position: absolute;
+        border-left: 10px solid black;
+    }
+  }
+
