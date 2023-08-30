@@ -34,10 +34,10 @@ async function loadQuestion(index) {
         questionElement.textContent = data.question;
         yesButtonElement.textContent = data.choices.yes;
         noButtonElement.textContent = data.choices.no;
-        
+
         // Update the question counter
         const questionCounterElement = document.getElementById('questionCounter');
-        questionCounterElement.textContent = `${index + 1}/4 kérdés`;
+        questionCounterElement.textContent = `${index + 1}/10 kérdés`;
 
     } catch (err) {
         console.error('Error loading question:', err);
@@ -102,7 +102,7 @@ function proceedToNextQuestion() {
     currentQuestionIndex++;
 
     // If there's a next question
-    if (currentQuestionIndex < 4) { 
+    if (currentQuestionIndex < 10) { 
         loadQuestion(currentQuestionIndex);
         document.getElementById('yesButton').style.display = 'inline-block';
         document.getElementById('noButton').style.display = 'inline-block';
@@ -112,7 +112,7 @@ function proceedToNextQuestion() {
 
 
         // If the upcoming question is the last one, change the next button's text
-        if (currentQuestionIndex === 3) { // 3 is the index of the last question (0-based index)
+        if (currentQuestionIndex === 9) { // 3 is the index of the last question (0-based index)
             document.getElementById('nextButton').textContent = "Mutasd az összesítést!";
         } else {
             document.getElementById('nextButton').textContent = "Tovább"; // Reset to "Next" for other questions

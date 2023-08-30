@@ -96,7 +96,7 @@
         }
     },
     {
-        "id": 9,
+        "id": 8,
         "question": "9 Legyen ingyenes wifi a közterületeken?",
         "choices": {
             "yes": "Igen",
@@ -108,7 +108,7 @@
         }
     },
     {
-        "id": 10,
+        "id": 9,
         "question": "10 Legyen ingyenes wifi a közterületeken?",
         "choices": {
             "yes": "Igen",
