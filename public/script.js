@@ -199,6 +199,8 @@ async function endSession() {
     document.getElementById('noButton').style.display = 'none';
     document.getElementById('feedback').style.display = 'none';
     document.getElementById('nextButton').style.display = 'none';
+    document.getElementById('questionCounter').style.display = 'none';
+
     document.getElementById('summaryContainer').style.display = 'block';
     document.getElementById('thankyou').style.display = 'block';
     document.getElementById('reloadButton').style.display = 'inline-block';
@@ -384,6 +386,40 @@ self.addEventListener('activate', function(event) {
         })
     );
 });
+
+document.getElementById('nextButton').addEventListener('click', function() {
+    if (currentQuestionIndex === 10) { 
+    $('#summaryModal').modal('show');
+    }
+});
+
+document.getElementById('submitEmail').addEventListener('click', function() {
+    let email = document.getElementById('emailInput').value;
+    let isChecked = document.getElementById('dataProtectionCheckbox').checked;
+
+    if(email && isChecked) {
+        // Post the email to server to save it in MongoDB
+        fetch('/save-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email: email })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.success) {
+                alert('Siker!');
+                $('#summaryModal').modal('hide');
+            } else {
+                alert('Hiba, nem sikerült menteni az emailt!');
+            }
+        });
+    } else {
+        alert('Kérünk, hogy valódi emailt adj meg és fogadd el az adatkezelési nyilatkozatot.');
+    }
+});
+
 
 
 

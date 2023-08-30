@@ -76,6 +76,33 @@
         </div>
     </div>
 
+    <!-- Assuming you've linked to Bootstrap CSS at the top of your document -->
+
+<div class="modal fade" id="summaryModal" tabindex="-1" aria-labelledby="summaryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="summaryModalLabel">Szeretnéd látni, hogy a többiekhez képest milyen válaszokat adtál?</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Add meg az email címed!</p>
+          <input type="email" id="emailInput" class="form-control" placeholder="Email">
+          <div class="form-check mt-3">
+            <input class="form-check-input" type="checkbox" id="dataProtectionCheckbox">
+            <label class="form-check-label" for="dataProtectionCheckbox">Elfogadom az adatkezelési nyilatkozatot</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="submitEmail">Mentés</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

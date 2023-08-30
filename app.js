@@ -44,6 +44,18 @@ const answerCountSchema = new mongoose.Schema({
 });
 const AnswerCount = mongoose.model('AnswerCount', answerCountSchema);
 
+const emailSchema = new mongoose.Schema({
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    }
+});
+
+const Email = mongoose.model('Email', emailSchema);
+
+module.exports = Email;
+
 app.get('/new-session', (req, res) => {
     const sessionID = uuidv4();
     res.json({ sessionID: sessionID });
@@ -158,6 +170,21 @@ app.get('/questions-data', (req, res) => {
     }));
     res.json(reducedData);
 });
+
+
+app.post('/save-email', async (req, res) => {
+    const { email } = req.body;
+
+    try {
+        const newEmail = new Email({ email });
+        await newEmail.save();
+        res.json({ success: true });
+    } catch (error) {
+        console.error(error);
+        res.json({ success: false });
+    }
+});
+
 
 const PORT = 3000;
 app.listen(PORT, () => {
