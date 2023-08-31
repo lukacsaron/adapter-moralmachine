@@ -270,81 +270,50 @@ function computeTypingDelay(char) {
     }
     return 5 + Math.random() * 25;  // Varying typing speed for regular characters
 }
-
-let timeout;
-
-function startOrResetTimer() {
-    clearTimeout(timeout);  // Reset the timer if it's already running
-
-    timeout = setTimeout(() => {
-        location.reload();  // Reload the page after 20 seconds
-    }, 50000);  
-}
-
-let interactionTimeoutDuration = 10000; // 10 seconds
-let timerTimeout;
 let interactionTimeout;
+
+const INTERACTION_TIMEOUT_DURATION = 200000; // 200 seconds
 
 document.addEventListener('scroll', handleInteraction);
 document.addEventListener('touchstart', handleInteraction);
 document.addEventListener('click', handleInteraction);
+document.addEventListener('mousemove', handleInteraction);
+document.addEventListener('mousedown', handleInteraction);  // mouse clicks
+document.addEventListener('keypress', handleInteraction);  // key presses
+document.addEventListener('touchmove', handleInteraction);  // touch movement
 
 function handleInteraction() {
-    // Clear previous timeouts
-    clearTimeout(interactionTimeout);
-    clearTimeout(timerTimeout);
-    
-    // Reset the timer line's width
+    clearTimeout(interactionTimeout); // Clear the previous timeout
+    interactionTimeout = setTimeout(() => {
+        location.reload();  // Reload the page after 200 seconds of inactivity
+    }, INTERACTION_TIMEOUT_DURATION);
+
+    resetTimerLine();
+}
+
+function resetTimerLine() {
     const timerLine = document.getElementById('timerLine');
     timerLine.style.transition = 'none'; // Temporarily disable transitions
     timerLine.style.width = '0%';
 
-    // Reflow to ensure the transition restarts
-    void timerLine.offsetWidth; // This forces a reflow
+    void timerLine.offsetWidth; // This forces a reflow, ensuring the transition restarts
 
-    timerLine.style.transition = 'width 100s linear'; // Re-enable the transition
+    timerLine.style.transition = 'width 200s linear'; // Re-enable the transition
     timerLine.style.width = '100%'; // Start the transition
-
-    // Set up the interaction timeout (10 seconds)
-    interactionTimeout = setTimeout(() => {
-        location.reload();
-    }, interactionTimeoutDuration + 900000); // This accounts for the 10-second interaction timeout plus the 20-second timer.
 }
-
-function startTimer() {
-    const timerLine = document.getElementById('timerLine');
-    timerLine.style.transition = 'width 100s linear';
-    timerLine.style.width = '100%';
-    
-    // Set the timeout to check for interactions
-    timerTimeout = setTimeout(() => {
-        location.reload();
-    }, 100000); // This waits 20 seconds, then checks if there was any interaction. If not, it reloads the page.
-}
-
-// Start the timer when the script loads
-startTimer();
-
-
-document.addEventListener('mousemove', startOrResetTimer);
-document.addEventListener('mousemove', handleInteraction);
-document.addEventListener('mousedown', startOrResetTimer);  // mouse clicks
-document.addEventListener('keypress', startOrResetTimer);  // key presses
-document.addEventListener('touchmove', startOrResetTimer);  // touch movement
-window.addEventListener('scroll', startOrResetTimer);  // scrolling
-
 
 function stopAllTimers() {
-    clearTimeout(typeTimeout);
-    clearTimeout(timeout);
-    clearTimeout(timerTimeout);
     clearTimeout(interactionTimeout);
-    
+
     // Additionally, if you want to reset the visual timer line
     const timerLine = document.getElementById('timerLine');
     timerLine.style.transition = 'none';
     timerLine.style.width = '0%';
 }
+
+// Start the timer when the script loads
+handleInteraction();
+
 
 document.getElementById("start").addEventListener("click", function() {
     const intro = document.getElementById("intro");
@@ -545,5 +514,4 @@ document.querySelector("#emailInput").addEventListener("blur", () => {
 
 
 initiateSession(); // Automatically start a session when the page loads
-startOrResetTimer();
 
