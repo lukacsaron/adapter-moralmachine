@@ -181,9 +181,13 @@ app.post('/save-email', async (req, res) => {
         res.json({ success: true });
     } catch (error) {
         console.error(error);
-        res.json({ success: false });
+        if (error.code === 11000) { // Check for duplicate key error code
+            return res.status(409).json({ success: false, error: "Ezzel az emailel már regisztráltak." });
+        }
+        res.status(500).json({ success: false, error: "Mentés sikertelen." });
     }
 });
+
 
 
 const PORT = 3000;

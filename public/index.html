@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="/manifest.json">
 
+<!-- Add this in the <head> section for the CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/simple-keyboard@2/build/css/index.css" rel="stylesheet">
+
+    <!-- Add this before your script.js for the JS -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@2/build/index.js"></script>
+    
+
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon" href="512.png">
@@ -61,24 +69,24 @@
             <h4>A végére értél.</h4>
             <p>Sajnáljuk, ha felidegesítettünk, de nem könnyű részt venni egy társadalmi kísérletben. Ha maradtak, vagy születtek benned kérdések, akkor beszélgess szakmai önkénteseinkkel, vagy további részletekért olvasd el Kódolt dilemmák: életünk kihívásai és döntései az információs korban című kiadványunkat, amelyet ingyen magaddal is vihetsz.</p>
             <p>Köszönjük, hogy részt vettél az Adaptér és a Szájensz Szeánsz közös társadalmi kísérletében.</p>
+            <button onclick="location.reload();" class="btn btn-xl btn-adapter margin-top-sm" id="reloadButton" style="display:none;">Új kitöltés</button>
         </div>
         </div>
     </div>
 
-    <div class="container-fluid fixed-bottom">
+    <div id="navbar" class="container-fluid fixed-bottom">
         <div class="row">
             <div class="col-md-12 center">
                 <button onclick="submitAnswer('yes')" class="btn btn-xl btn-adapter" id="yesButton">Igen</button>
                 <button onclick="submitAnswer('no')" class="btn btn-xl btn-adapter" id="noButton">Nem</button>
                 <button onclick="proceedToNextQuestion()" class="btn btn-xl btn-adapter btn-inactive" id="nextButton" style="display:none;">Tovább</button>
-                <button onclick="location.reload();" class="btn btn-xl btn-adapter" id="reloadButton" style="display:none;">Új kitöltés</button>
             </div>
         </div>
     </div>
 
     <!-- Assuming you've linked to Bootstrap CSS at the top of your document -->
 
-<div class="modal fade" id="summaryModal" tabindex="-1" aria-labelledby="summaryModalLabel" aria-hidden="true">
+<div class="modal fade" id="summaryModal" tabindex="-1" aria-labelledby="summaryModalLabel" aria-hidden="true" data-bs-backdrop='static'>
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -92,15 +100,20 @@
           <input type="email" id="emailInput" class="form-control" placeholder="Email">
           <div class="form-check mt-3">
             <input class="form-check-input" type="checkbox" id="dataProtectionCheckbox">
-            <label class="form-check-label" for="dataProtectionCheckbox">Elfogadom az adatkezelési nyilatkozatot</label>
+            <label class="form-check-label" for="dataProtectionCheckbox">Elfogadom az <a href="https://docs.google.com/document/d/1BOYaiE554ISnwzzaT3LSKSiS3n4EyCNh/edit?usp=sharing&ouid=105499393738924252031&rtpof=true&sd=true" target="_blank">adatkezelési nyilatkozatot</a></label>
+            <small id="emailHelp" class="form-text text-muted">A címedet nem adjuk át másnak.</small>
+            <small id="emailHelp" class="form-text text-muted">Nem spammelünk. Havonta max. 1 emailt küldünk az Adaptér programjairól.</small>
+
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="submitEmail">Mentés</button>
+          <button type="button" class="btn btn-adapter btn-lg btn-block" id="submitEmail">Mentés</button>
         </div>
       </div>
     </div>
   </div>
+
+  <div id="keyboard" class="simple-keyboard"></div>
   
 
 <script src="script.js"></script>

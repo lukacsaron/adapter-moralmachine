@@ -200,6 +200,7 @@ async function endSession() {
     document.getElementById('feedback').style.display = 'none';
     document.getElementById('nextButton').style.display = 'none';
     document.getElementById('questionCounter').style.display = 'none';
+    document.getElementById('navbar').style.display = 'none';
 
     document.getElementById('summaryContainer').style.display = 'block';
     document.getElementById('thankyou').style.display = 'block';
@@ -393,11 +394,18 @@ document.getElementById('nextButton').addEventListener('click', function() {
     }
 });
 
+
 document.getElementById('submitEmail').addEventListener('click', function() {
     let email = document.getElementById('emailInput').value;
     let isChecked = document.getElementById('dataProtectionCheckbox').checked;
 
-    if(email && isChecked) {
+    // Check for valid email syntax
+    if (!isValidEmail(email)) {
+        alert('Kérjük, adj meg egy valódi email címet.');
+        return;  // Stop the execution if email is invalid
+    }
+
+    if (email && isChecked) {
         // Post the email to server to save it in MongoDB
         fetch('/save-email', {
             method: 'POST',
@@ -406,18 +414,130 @@ document.getElementById('submitEmail').addEventListener('click', function() {
             },
             body: JSON.stringify({ email: email })
         })
-        .then(response => response.json())
+        .then(response => {
+            // Check for OK status and also parse JSON
+            if (!response.ok) {
+                // Extract more detailed error message from the response body
+                return response.json().then(errorData => {
+                    throw new Error(errorData.error || 'Hiba, nem sikerült menteni az emailt!');
+                });
+            }
+            return response.json();
+        })
         .then(data => {
-            if(data.success) {
+            if (data.success) {
                 alert('Siker!');
                 $('#summaryModal').modal('hide');
             } else {
                 alert('Hiba, nem sikerült menteni az emailt!');
             }
+        })
+        .catch(error => {
+            console.error("Hiba történt:", error.message);
+            // Display error message to user
+            alert(error.message);
         });
     } else {
         alert('Kérünk, hogy valódi emailt adj meg és fogadd el az adatkezelési nyilatkozatot.');
     }
+});
+
+// The isValidEmail function
+function isValidEmail(email) {
+    const re = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    return re.test(String(email).toLowerCase());
+}
+
+
+// Initialize the keyboard
+let keyboard = new SimpleKeyboard.default({
+    onChange: input => onChange(input),
+    onKeyPress: button => onKeyPress(button)
+});
+
+function isDesktop() {
+    return window.innerWidth > 768;  // Adjust this value based on your needs
+}
+
+function onChange(input) {
+    document.querySelector("#emailInput").value = input;
+}
+
+function onKeyPress(button) {
+    // Handle key press events if needed
+}
+
+document.querySelector("#emailInput").addEventListener("focus", () => {
+    if (isDesktop()) {
+        document.querySelector("#keyboard").style.display = "block";
+        keyboard.render(); // Ensure the keyboard renders when the input gets focus
+    }
+});
+
+document.querySelector("#emailInput").addEventListener("blur", () => {
+    if (isDesktop()) {
+        // Hide the keyboard when the input loses focus
+        document.querySelector("#keyboard").style.display = "none";
+    }
+});
+
+// Handle outside clicks
+document.addEventListener("mousedown", (event) => {
+    const keyboardContainer = document.querySelector("#keyboard");
+    const isClickInsideKeyboard = keyboardContainer.contains(event.target);
+    const emailInput = document.querySelector("#emailInput");
+    
+    if (!isClickInsideKeyboard && emailInput !== event.target) {
+        keyboardContainer.style.display = "none";
+    }
+});
+
+// Observe changes to the modal
+const summaryModal = document.getElementById('summaryModal');
+const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        if (mutation.attributeName === "class") {
+            if (summaryModal.classList.contains("show")) {
+                // Modal is shown
+                if (isDesktop() && document.querySelector("#emailInput") === document.activeElement) {
+                    document.querySelector("#keyboard").style.display = "block";
+                    keyboard.render();
+                }
+            } else {
+                // Modal is hidden
+                document.querySelector("#keyboard").style.display = "none";
+            }
+        }
+    });
+});
+observer.observe(summaryModal, { attributes: true });
+
+document.querySelector("#emailInput").addEventListener("focus", function() {
+    console.log("Input is in focus.");
+    if (isDesktop()) {
+        document.querySelector("#keyboard").style.display = "block";
+        keyboard.render();
+    }
+});
+
+document.querySelector("#summaryModal").addEventListener("focus", function() {
+    console.log("Input is in focus.");
+    if (isDesktop()) {
+        document.querySelector("#keyboard").style.display = "block";
+        keyboard.render();
+    }
+});
+
+document.querySelector("#summaryModal").addEventListener('shown.bs.modal', function() {
+    document.querySelector("#emailInput").focus();
+});
+
+document.querySelector("#keyboard").addEventListener("mousedown", function(e) {
+    e.preventDefault();
+});
+
+document.querySelector("#emailInput").addEventListener("blur", () => {
+    document.querySelector("#keyboard").style.display = "none";
 });
 
 

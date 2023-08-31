@@ -1,5 +1,6 @@
  body {
     font-family: 'Epilogue', sans-serif;
+    overflow-x: hidden;
  }
 
 .center {
@@ -32,6 +33,35 @@
 
 .margin-bottom {
     margin-bottom: 50px;
+}
+
+.modal-open .modal {
+    backdrop-filter: blur(7px);
+}
+
+.modal-header, .modal-footer {
+    border-color: black;
+    border-radius: 0;
+}
+
+#keyboard {
+    bottom: 0px;
+    z-index: 99999;
+    position: absolute;
+}
+
+.modal-content {
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+input.form-control {
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.close {
+    opacity: 0.1;
 }
 
  h1 {
