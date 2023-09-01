@@ -97,8 +97,88 @@ input.form-control {
             margin-bottom: 100px;
         }
 
+        @keyframes slowRotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes slowRotate-2 {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(10deg);
+            }
+        }
+
+        @keyframes slowMove {
+            from {
+                transform: translateX(0px)
+            }
+            to {
+                transform: translateX(1000px)
+            }
+        }
+
+#animation-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 999999999;
+    pointer-events: none;
+}
+
+#hullam {
+    position: absolute;
+    z-index: 99999999;
+    width: 600px;
+    bottom: -50px;
+    right: -240px;
+    animation: slowRotate 480s linear infinite;  /* This will rotate the element in 30 seconds. Adjust the duration as needed. */
+
+}
+
+#hullam-2 {
+    position: absolute;
+    z-index: 99999999;
+    height: 600px;
+    bottom: -170px;
+    left: -180px;
+    animation: slowRotate-2 30s linear infinite;  /* This will rotate the element in 30 seconds. Adjust the duration as needed. */
+
+}
+
+#logo-big {
+    position: absolute;
+    z-index: 99999999;
+    width: 600px;
+    bottom: 10px;
+    left: 0;
+    animation: slowMove 180s linear infinite;  /* This will rotate the element in 30 seconds. Adjust the duration as needed. */
+    
+}
+
+#kapu {
+    position: fixed;
+    width: 190px;
+    right: 120px;
+    bottom: 220px;
+}
+
+#plusz {
+    position: fixed;
+    width: 60px;
+    left: 180px;
+    top: 40px;
+}
+
 #feedback {
-    margin-bottom: 25px;
+    margin-bottom: 175px;
 }
 
 @keyframes slideOut {
@@ -254,9 +334,36 @@ input.form-control {
     z-index: 9999;
 }
 
+@media (min-width: 360px) and (max-width: 897px) and (orientation: landscape) {
+    #animation-wrapper {
+        display: none;
+    }
+  }
+
+@media (min-width: 800px) and (max-width: 1350px) {
+    .overlay {
+        display: none;
+    }
+    #start {
+        margin-top: 60px
+    }
+    
+}
+
+@media (min-width: 1350px) and (max-width: 1921px) {
+
+    #start {
+        margin-top: 30px
+    }
+    
+}
+
 
 
 @media (min-width: 360px) and (max-width: 844px){
+    #animation-wrapper {
+        display: none;
+    }
     .btn-xl {
         font-size: 1em;
     }
@@ -295,6 +402,9 @@ input.form-control {
   }
 
 @media (min-width: 481px) and (max-width: 767px) {
+    #animation-wrapper {
+        display: none;
+    }
     h1 {
         font-size: 1.5em;
     }
@@ -324,7 +434,7 @@ input.form-control {
     }
 
     .margin-top-md {
-        margin-top: 150px;
+        margin-top: 50px;
     }
 
     #question {

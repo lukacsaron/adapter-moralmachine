@@ -244,10 +244,21 @@ function typeText(element, text, index = 0) {
 
 function scrollCursorIntoView() {
     const cursor = document.getElementById('cursor');
+    const cursorPosition = cursor.getBoundingClientRect();
+    
+    // Height of the viewport
+    const viewportHeight = window.innerHeight;
 
-    // Use scrollIntoView to ensure the cursor is visible
-    cursor.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'smooth' });
+    // If the cursor's bottom position is within the overlapping area of the fixed bottom bar
+    if (cursorPosition.bottom > (viewportHeight - 200)) {
+        // Calculate the difference and adjust the scrolling
+        const offset = cursorPosition.bottom - (viewportHeight - 200);
+        window.scrollBy({ top: offset, behavior: 'smooth' });
+    } else {
+        cursor.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'smooth' });
+    }
 }
+
 
 // You might want to call this function whenever text changes
 // For instance, if you're using a library like Typed.js or a custom function to handle the typing animation:
@@ -317,6 +328,7 @@ handleInteraction();
 
 document.getElementById("start").addEventListener("click", function() {
     const intro = document.getElementById("intro");
+    document.querySelector("#animation-wrapper").style.display = "none";
     intro.classList.add("slide-out");
 
     
