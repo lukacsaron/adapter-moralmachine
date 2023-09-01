@@ -211,13 +211,13 @@ input.form-control {
 .overlay {
     position: fixed;
     max-width: 170px;
-    left: -50px;
+    left: -140px;
     top: 280px;
     z-index: 99;
 }
 
 .right-overlay {
-    right: 170px;
+    right: 70px;
     left: inherit;
     top: 130px;
 }
