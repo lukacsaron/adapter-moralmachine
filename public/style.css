@@ -149,7 +149,7 @@ input.form-control {
     height: 100px;
     top: 30px;
     right:40px;
-    animation: slowRotate-2 30s linear infinite;
+    animation: slowRotate 30s linear infinite;
 }
 
 #hullam-2 {
