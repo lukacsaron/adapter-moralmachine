@@ -146,10 +146,11 @@ input.form-control {
 #hullam-2 {
     position: absolute;
     z-index: 99999999;
-    height: 600px;
-    bottom: -170px;
-    left: -180px;
-    animation: slowRotate-2 30s linear infinite;  /* This will rotate the element in 30 seconds. Adjust the duration as needed. */
+    height: 350px;
+    bottom: -250px;
+    left: -120px;
+    animation: slowRotate-2 30s linear infinite;
+    /* rotate: 90deg; */
 
 }
 
