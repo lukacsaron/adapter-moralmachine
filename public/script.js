@@ -250,7 +250,7 @@ function scrollCursorIntoView() {
     const viewportHeight = window.innerHeight;
 
     // If the cursor's bottom position is within the overlapping area of the fixed bottom bar
-    if (cursorPosition.bottom > (viewportHeight - 200)) {
+    if (cursorPosition.bottom > (viewportHeight - 220)) {
         // Calculate the difference and adjust the scrolling
         const offset = cursorPosition.bottom - (viewportHeight - 200);
         window.scrollBy({ top: offset, behavior: 'smooth' });
@@ -526,4 +526,3 @@ document.querySelector("#emailInput").addEventListener("blur", () => {
 
 
 initiateSession(); // Automatically start a session when the page loads
-
