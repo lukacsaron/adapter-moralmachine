@@ -48,6 +48,9 @@
     bottom: 0px;
     z-index: 99999;
     position: absolute;
+    display: block;
+    max-width: 60%;
+    margin: 0px 20%;
 }
 
 .modal-content {
