@@ -143,6 +143,15 @@ input.form-control {
 
 }
 
+#szajensz-szeansz-logo {
+    position: absolute;
+    z-index: 99999999;
+    height: 100px;
+    top: 30px;
+    right:40px;
+    animation: slowRotate-2 30s linear infinite;
+}
+
 #hullam-2 {
     display: none;
     position: absolute;
