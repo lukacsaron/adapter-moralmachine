@@ -1,0 +1,122 @@
+[
+    {
+        "id": 0,
+        "question": "Találhat nekünk párt a mesterséges intelligencia?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Elég sekélyes gondolat, hogy a szerelemhez csak a „párkapcsolati piacon” megfelelő portfolióval rendelkező áru megtalálására van szükségük az embereknek.[[br]][[br]]Ez a párkapcsolatok közgazdaságtani szemlélete, ami a fogyasztói világ logikáját alkalmazza a szerelmi életre. A szeretet azonban nem akkor lobban fel, amikor a megfelelő tárgyat megtaláljuk hozzá. A szeretet és a szerelem a pszichológia szerint képesség, amit a személyiségünkön belül kell fejleszteni. Ha folyton kudarcot vallasz, akkor nem a megfelelő pártaláló algoritmusok, hanem a benned lévő készségek hiányoznak. Ebben pedig egy algoritmus nem tud segíteni.",
+            "no": "Már a manuális, emberek által elrendezett, szervezett házasságok is jobban teljesítenek hosszú távon, mint az emberek által választott „szerelemházasságok”.[[br]][[br]]A párosító algoritmus ráadásul biztosítja, hogy a közös érdeklődési körök és a preferált fizikai tulajdonságok jelen legyenek, mielőtt bemutatja neked a megfelelő partnert. Mivel a rendszer öntanuló, minél többen bízzák rá magukat az algoritmusra, annál megfelelőbb partnert fog választani neked. Az eHarmony társkereső weboldal például már olyan mesterséges intelligenciát tesztel, amely elemzi a csevegésed, és javaslatokat küld a következő lépésre vonatkozóan. A Happn pedig mesterséges intelligenciát használ a profilok „rangsorolásához”, ami így személyre szabott partnert kínál nekünk."
+        }
+    },
+    {
+        "id": 1,
+        "question": "Jobb városban élni?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Úgy tűnik, hogy téged is megtéveszt a függetlenség illúziója.[[br]][[br]]Gondolj csak bele, ha hirtelen a boltokba nem érkezik friss áru, vagy tönkremegy az elektromos hálózat, akkor mit csinálsz? A Covid-19-járvány ebből is adott egy kis ízelítőt: hirtelen újra divatossá vált kovászos kenyeret sütni, a balkonládák muskátlik helyett paradicsompalántákkal teltek meg, és gomba módjára kezdtek el szaporodni a közösségi kertek a városokban. Amíg egy város biztosítja a jólétet, és megteremti azt a környezetet, amelyben a Maslow-piramis alsó két szintjének szükségleteit könnyedén ki tudod elégíteni, addig ez egy sérülékeny létállapotot is jelent. Ez a függetlenség illúziója, amely rámutat arra, hogy hiába van több lehetőséged a városban, mégis sokkal kiszolgáltatottabb vagy, mint a vidéken élő emberek, akiknek megvannak a maguk túlélési stratégiái az ilyen helyzetekre.",
+            "no": "Úgy látszik, hogy elbódított a vidéki romantika, pedig a városon kívül sem fenékig tejfel az élet.[[br]][[br]]Jelentős különbség a vidéki és városi életmód között az, hogy a városi életmód társul egy intézményi, szolgáltatási bőséggel is. Minden este van színházi előadás, találunk magunknak vegán éttermet, többféle kávézót, és minden vallásnak van temploma. Minél több ember él egy helyen, annál nagyobb szükség van hatékonyan működő út-, víz- és elektromos hálózatra, jobb egészségügyre, oktatásra, szórakozásra. Ráadásul mindezek a szolgáltatások gyorsan és könnyen elérhetőek, nem kell értük sokat utazni. A városban élők egészségesebbek, hiszen könnyebben jutnak el orvoshoz, sőt szakorvosi vizsgálatokra; a városban jobbak az iskolák, mert nagyobb közöttük a verseny, és ezáltal nő az oktatás színvonala is; valamint jobbak a szociális ellátások is."
+        }
+    },
+    {
+        "id": 2,
+        "question": "Kifejlesztenek egy agyfokozó pirulát, amitől magabiztosabbak lesznek az emberek - bevezetnéd-e?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Gratulálok az emberi faj elpusztításához. Most legalizáltad a kokaint.[[br]][[br]]Az agyfokozó (neuroenhancement) drogok olyan anyagok, amelyek az agyműködést befolyásolják, és céljuk a memória, a koncentráció vagy az emberi teljesítmény javítása. Amint egy országban bevezeted őket, versenyhelyzet alakul ki, ami miatt minden más ország is igyekszik átalakítani népességét. Céllá válhat például a hosszú távú társadalmi stabilitás biztosítása olyan emberi jellegek fokozásával, mint az engedelmesség, a behódolás, a konformitás, a kockázatkerülés vagy a gyávaság. Jól hangzik, ugye? Ennek az öngyilkos ideológiának a neve transzhumanizmus, ami az emberi faj „maghaladását” tűzte ki célul. Az embereknek van egy autentikus magjuk, amelytől így eltérítjük őket drogokkal. Nem véletlenül nem ismerünk magunkra egy ittas éjszaka után. Azok nem is mi voltunk, hanem kémiai anyagok, melyek alakították a viselkedésünket.",
+            "no": "Gratulálok, üdv a vesztesek országában…[[br]][[br]]A mai társadalmak jellemzően legalizálják a nyugtatószereket, de tűzzel-vassal üldözik az emberek kreativitását és magabiztosságát növelő anyagokat. Érdekes belegondolni, nem? A Xanax-függő lakosság valamiért kívánatosabb, mint a kokainfüggő. Vannak azonban, akik mindenféle személyiségmódosítást, egyes tulajdonságok bárminemű fokozását ellenzik. Emögött részben az az elgondolás áll, hogy az emberek valamilyen „eredeti” személyiséggel születnek, amelytől eltérítenek a kémiai szerek. Pedig a személyiséged nem más, mint azoknak a döntéseknek a sorozata, amiket meghozol. Fogadjunk, hogy egy ittas este után azt mondod, „ez nem is én voltam”. Pedig te voltál az is. És ha unod, hogy megbénít a szorongás, miért ne alakítanád át magad szerek segítségével? Ráadásul ha egy közösség bevezeti a magabiztosság-pirulát, onnantól melyik ország engedheti meg magának a mai nemzetközi versenyben, hogy a környék legszorongóbb népességével rendelkezzen? Csak egy igazi vesztes."
+        }
+    },
+    {
+        "id": 3,
+        "question": "Legyen ingyenes wifi a közterületeken?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Ha szeretsz veszélyesen élni, és nem zavar, hogy az összes banki és személyes adatod veszélybe kerül, akkor érthető a választásod.[[br]][[br]]Az ingyenes wifi infrastruktúrájának kiépítése és fenntartása drága mulatság. Mindemellett olyan, mint egy nyílt seb a digitális társadalom testén. Hatalmas biztonsági kockázatot jelent, hiszen az ingyenes wifihálózatokat könnyebben kihasználhatják kiberbűnözők és hackerek, ami a felhasználók személyes adatainak veszélyeztetéséhez, sőt a települési infrastruktúra megbénításához is vezethet. Ráadásul mindez különösen veszélyes azokra a társadalmi rétegekre nézve, amelyekben az internetes edukáció alacsony szintű, vagy nem is létezik. Például az idősek közül sokan könnyedén lehetnek az egyre kifinomultabb internetes csalások áldozatai.",
+            "no": "Az internet, ahol minden történik, és ahol minden tudás elérhető, ezek szerint csak a kiváltságosoknak jár? Na, szép![[br]][[br]]Az ingyenes wifi lehetőséget biztosít a lakosság széles rétegeinek, ideértve a rászorulókat is, hogy könnyebben hozzáférjenek az internethez és ezáltal a nyilvánossághoz. Ez segíti a digitális szakadék csökkentését, az információhoz és tanuláshoz való egyenlőbb hozzáférést. Ráadásul vonzóvá teheti közterületeket az adott település lakói és a turisták számára egyaránt. Az idegenforgalom fellendülése, a turisták elégedettsége és a helyi vállalkozások virágzása révén az ingyenes wifihálózat az önkormányzatoknak nagyobb adóbevételeket és ezáltal jobb közszolgáltatásokat jelenthet. Ezeken túl pedig lehetőséget nyújt az embereknek, hogy könnyen kapcsolatban maradjanak családtagjaikkal, barátaikkal, üzleti partnereikkel. A közösségek így nyitottabbá válhatnak, ami megerősíti a társadalmi szervezeteket, és segíti a közösségi kikapcsolódást."
+        }
+    },
+    {
+        "id": 4,
+        "question": "Számít, ha „zero waste” életmódot folytatunk?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Akkor az a rossz hírünk van, hogy te is áldozatul estél a globális kapitalizmus egyik legjobban kidolgozott marketingfogásának.[[br]][[br]]Az egyén felelősségének hangsúlyozása egy sikeres, de hazug kampány, ami tökéletes arra, hogy elfedje a mai gazdasági rendszer hibáit. A zero waste mozgalom bár szép elgondolás, de gyakorlatilag hatástalan. Ugyanis ha egy átlagember lemond mindenről, ami közvetlenül vagy közvetetten üvegházhatású gáz kibocsátásával jár, akkor 70 év alatt kíméli meg a légkört annyi üvegházhatású gáztól, mint amennyit a globális energiaipar egy másodperc alatt bocsát ki. A szemét esetén is ez a helyzet. Az EU-ban mindössze a szemét 8,5%-a keletkezik a lakosságnál, a többit a cégek termelik. A cégeknek kéne változtatni, márpedig ez az utolsó dolog, amit bármelyik gyártó vagy politikus akar, hiszen ez a termelés csökkentését, de legalábbis szigorú szabályozását és költséges új technológiák kifejlesztését jelentené.",
+            "no": "Sebaj, majd elégetik Törökországban vagy elszállítják Afrikába a sok felesleges csomagolóanyagot, mert az embereknek nincs öt perce elmenni a csomagolásmentes boltba.[[br]][[br]]A magas GDP-jű országok lakosonként évente 500 kilogramm vagy annál is több hulladékot termelnek. Képzeld el, hogy mindezt nem viszi el a kukásautó egy mágikus, ismeretlen helyre, hanem ott marad a kertedben. Húsz év után, ha csak egyedül élsz, már tíz tonna szemetet kellene elásnod az udvarodban vagy kilőnöd az űrbe. A zero waste lényege, hogy olyan életet élj, ami akkor is kibírható, ha egyik pillanatról a másikra megszűnik a szemétszállítás és a hulladékgazdálkodás. Az emberiség történetében sokáig a hulladékmentes életmód volt a norma. A ruhák újrahasznosítása, az élelmiszerek tartósítása, a szerszámok és bútorok saját kezű javítása, valamint a tárgyak lehető legnagyobb mértékű újrafelhasználása jellemezte a társadalmat. Ezt az életmódot ma is létrehozhatod, ha a zero waste szemléletet követed."
+        }
+    },
+    {
+        "id": 5,
+        "question": "Hülyeség vitaminokat szedni?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Nem kell mindennek bedőlni, de a vitaminok életet menthetnek, ha valamilyen hiánybetegségben szenved az ember.[[br]][[br]]Nem minden vitaminra igaz, de vannak olyanok, amelyeket érdemes lehet szedni, ha valamilyen hiánybetegséggel küzdesz, vagy éppen nem megfelelően táplálkozol. Az európaiak 40%-a szenved például D-vitamin-hiányban, mivel a táplálkozással nehéz megfelelő mennyiséget a szervezetbe juttatni. Annak tehát, akinek az orvos felír vényköteles D-vitamint, kifejezetten érdemes azt beszednie az őszi-téli hónapokban, amikor kevesebb napfény éri a bőrét. A vegánoknak pedig érdemes B12-vitamint szedni, mivel az az állati eredetű élelmiszerekben található meg, és szükséges a központi idegrendszer megfelelő működéséhez. Azoknak, akik viszont kiegyensúlyozottan táplálkoznak, semmi szükségük arra, hogy extra kapszulákat vegyenek be bármelyik vitaminból.  ",
+            "no": "Akkor te is bedőltél a gyógyszeripar egyik legnagyobb átverésének.[[br]][[br]]Nem bizonyított, hogy a vitaminok szedése hozzájárulna az egészség fenntartásához. Csak Magyarországon az emberek évi több mint 40 milliárd forintot költenek el ilyen étrend-kiegészítőkre, amelyek világszinten egy több milliárd dolláros profittal operáló iparágat jelentenek. Ez a koronavírus-járványt követően valószínűleg még jobban megugrott, hiszen rengetegen érezték úgy, hogy a vitaminok erősíteni fogják az immunrendszerüket, és ezzel védekezhetnek a vírus ellen. Holott a vitaminok szedése egyszerűen nem váltja ki azt a hatást, amelyet ígérnek, sőt túl nagy mennyiségben történő fogyasztásuk akár veszélyes is lehet. Ráadásul az immunrendszer erősítése is csak egy jól kitalált marketingszlogen, hiszen ha ténylegesen kifejtenék ezt a hatást, akkor immunrendszerünk túlműködne, és ez nagyon súlyos egészségügyi következményekkel járna, például olyan heves allergiás reakciókat tapasztalhatnánk, mint a mogyoróallergia esetén. "
+        }
+    },
+    {
+        "id": 6,
+        "question": "Adhatunk-e okostelefont gyermekünknek?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Mintha egy gramm kokaint adna valaki a gyerekének, és beküldené a világ legaddiktívabb kaszinójába…[[br]][[br]]Kiemelkedően jó szülő vagy! Naponta átlagosan százötvenszer nézünk rá a telefonunkra, vajon mindez tudatos választásunk? Tegyél egy nyerőgépet több milliárd zsebbe – ez volt a zseniális mérnökök mondása, amikor megalkották az okostelefonokon használt applikációkat. A különböző értesítések, like-ok és matchek mini jutalmak, amiket vagy megkapsz, vagy nem, amikor csekkolod a telefont. Ez ugyanaz a pszichológiai mechanizmus (intermittáló megerősítés), mint amit a köztudottan addiktív játékgépeknél használnak a maximális függőség kialakítására. Egyébként számtalan kutatás bizonyította, hogy az okostelefon-használat mértéke összefügg a depresszió és a szorongás mértékével. Miért is adnál egy olyan egy „szociális” technológiát a gyerekednek, amely csökkenti a társadalmi szerepvállalást és a pszichológiai jólétet?",
+            "no": "Amikor a nyomdagépet feltalálták, a könyvkereskedőket kiűzték a városokból, és boszorkánysággal vádolták meg.[[br]][[br]]Üdv a géprombolók büszke táborában! Az ember technológiai civilizációt épít, aminek számos előnye van, ám emiatt vállalnia is kell annak kockázatait. Az okostelefon védelem, gyerekünk fel tud hívni, ha bajban van. És persze áldozata is lehet internetes csalásoknak, ha nem elég óvatos. De áram is van a lakásunkban, a gyerekünk pedig belenyúlhat a konnektorba. A legtöbben mégsem teszik, ami meglepően nagy eredmény! A szocializációs környezet felelőssége, hogy megtanítson minket élni ebben a bonyolult technológiai civilizációban. A technológia önmagában semleges, a kérdés az, hogyan bánnak vele az emberek. A korai videójáték-kutatások mind azt jósolták, a gyerekeknek nagyon rosszat tesz a „kockulás”. Mára azonban kevésbé elfogult kutatások kimutatták, hogy az összetett stratégiai videójátékok használata fokozhatja a gondolkodási rugalmasságot, jelentős javulást eredményez a munkamemória és a koncentrált figyelem terén. Lehet, hogy várni kellene, mielőtt kikiáltunk gonosznak egy technológiát."
+        }
+    },
+    {
+        "id": 7,
+        "question": "Cukor-pszichopolitika – manipuláljuk-e az embereket az egészséges életmódra?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Az emberek gyerekként kezelését és a szabad akarat tagadását már a felvilágosodáskor meghaladtuk.[[br]][[br]]A manipuláció, akárhonnan is nézzük, az emberek megvezetése. Lehet azt mondani, hogy mindez egy jó cél érdekében történik, de ki dönti el, hogy mi a jó cél? Nem ritka az emberiség történetében, hogy egy-egy elitcsoport megpróbálja meghatározni a társadalom számára, hogy milyen a jó működés, milyen a helyes élet. Ebből persze sülnek ki jó dolgok is, de az emberiség történetének nagy tragédiái is így jöttek létre. Lehet, hogy ezekből tanulva csak hosszas társadalmi egyeztetések és viták után érdemes eldönteni, mi szolgálja igazán a közjót, és nem ráhagyni az államra, hogy önhatalmúlag döntsön.",
+            "no": "Évente csaknem 3,7 millió haláleset kapcsolódik a cukorbetegséghez.[[br]][[br]]Az egészségtelen ételek túlfogyasztása ma komoly közegészségügyi probléma. A túlevés oka részben a nagy adagok elérhetőbbé és egyre nagyobbá válásában keresendő. Negyven évvel ezelőtt egy félliteres üdítőspalackot úgy reklámoztak, hogy az három felnőtt számára elegendő; ma már a fél liter nem is a nagy, hanem a normál adag. Az adagolásból látszik, hogy nincsenek semleges választási környezetek. A körülmények mindig befolyásolják döntéseinket, hiszen az üdítőitalnak mindig lesz egy adott mérete. Még ilyen egyszerű dolgokkal is folyamatosan manipulálnak minket olyan cégek, mint a Coca-Cola. De például amikor bemegyünk a boltba, a termékek elhelyezkedése is bizonyítottan meghatározza, hogy miből vásárolunk valószínűbben. Akkor már ne az állam írja elő inkább, hogy milyen ételek legyenek szemmagasságban, például a zöldségek? Nem volna jobb, ha ilyesféle manipulációkkal megpróbálna rávenni téged, hogy egyél végre egészségesebben, és ne halj meg idejekorán cukorbetegségben?"
+        }
+    },
+    {
+        "id": 8,
+        "question": "Elbutítanak minket az okoseszközök?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Géprombolók mindig is léteztek, de sosem voltak sikeresek. Úgy tűnik, hogy vannak, akik most is ezzel próbálkoznak…[[br]][[br]]Egyre inkább afelé tartunk, hogy ezek az eszközök, akár beültetett implantátumokként, kiegészítsék az embert, okosabbá, figyelmesebbé és tájékozottabbá tegyék. Persze ennél jóval kézzelfoghatóbb az a gondolat, hogy az okoseszközök például nagy segítséget nyújthatnak az idős, demenciában szenvedő betegek ellátásában és felügyeletében. Az okos-gyógyszeradagolók vagy az életjeleket vizsgáló karórák nagyban megkönnyítik az időskori elbutulásban szenvedő, magányos emberek ápolását, hiszen saját otthonukban, távolról tudnak rájuk vigyázni a szakemberek az okostechnológia segítségével, és szükség esetén célzottan és hatékonyan tudnak beavatkozni. Fontos továbbá az is, hogy a magányos, idős embereknek az okoseszközök szórakozási és kapcsolattartási lehetőséget is jelentenek, különösen, ha nehezen tudják elhagyni az otthonukat segítség nélkül.",
+            "no": "A világ összetettebb folyamatainak megértése, úgy tűnik, már nem érték.[[br]][[br]]Azért a régi könyveket még nem kell levinni a pincébe, bármikor szükség lehet rájuk.  Ma már előre be tudjuk programozni a mosógépünket vagy az airfryerünket, a napfelkeltéhez tudjuk igazítani a redőny felhúzását, sőt ha hideg az idő, akkor egyetlen üzenettel szólhatunk a lakásunknak, hogy hány fokosra fűtse fel magát, mire hazaérünk. Azzal, hogy ezeket az apró, teljesen hétköznapi műveleteket is elkezdtük kiváltani, egyre lustábbak leszünk. Egyre kisebb az igényünk a bonyolultabb dolgok megértésére, valamint egyre kevésbé van kedvünk felkelni, hogy „analóg” módon engedjük le a redőnyt sötétedés után. Az okostechnológiák versengő (kompetitív) kognitív eszközök, nem növelik az ember reprezentatív képességeit, hanem helyettesítik azokat. A régi agyi kapacitásaink használat híján szépen lassan elsorvadnak és eltűnnek. Röviden: lustulunk, és egyre kevesebb dolgot tudunk megcsinálni, sőt egyre kevésbé értjük azt, hogy mi hogyan működik, ez pedig egyenes út a butuláshoz."
+        }
+    },
+    {
+        "id": 9,
+        "question": "Gyógyíthat-e orvos helyett a mesterséges intelligencia?",
+        "choices": {
+            "yes": "Igen",
+            "no": "Nem"
+        },
+        "feedback": {
+            "yes": "Segíteni tud, gyógyítani nem.[[br]][[br]]Bármennyire is szeretjük az okostelefonunkat, nem lesz az orvosunk is. Bár a gyógyítás bizonyos részei automatizálhatóak, a test egyensúlyának felborulása olyan komplex, hogy egy MI képtelen arra reagálni. Kizárólag az embereknek van olyan kreativitása, gyors reakcióképessége és általános intelligenciája, hogy a gyógyításhoz szükséges döntéseket meghozza. Az orvos az emberi intuíció révén ránézésre is megtud rengeteg olyan információt a betegről, amit egy MI képtelen számításba venni. Nem is beszélve az emberi gondoskodásról és a gyógyítás lelki oldaláról, amit kizárólag emberek tudnak embereknek megadni.",
+            "no": "Hiába ragaszkodunk az emberi faj felsőbbrendűségéhez, ma már sokkal jobb információfeldolgozó gépek vannak, mint az emberi agy. [[br]][[br]]Végső soron az emberi orvos csak egy információfeldolgozó gép, ami a különböző eszközökkel mért biológiai adatokon végez számításokat, majd diagnosztizál és kezel a feltételezéseinek megfelelően. Minderre a mesterséges intelligencia is képes, csak meg kell találni a módját, hogy a különböző biológiai adatok a rendelkezésére álljanak. Feltételezései ráadásul, az emberi orvosokkal ellentétben, több millió korábbi orvosi döntésen alapszanak, így sokkal pontosabbak. Ahol adatokhoz jutni egyszerű, mert lehetséges vizuális információk alapján diagnosztizálni, mint például a bőrgyógyászatban vagy a sebkezelésben, már most is jóval nagyobb a diagnosztikai pontossága az MI-nek, mint az emberi orvosnak. Ahogy fejlődik a technológia – például az okosórák egyre pontosabban tudják figyelni a szívhangokat, a különböző szenzorok a szövetközi folyadékból képesek mérni a glükózszintet, és így tovább –, az algoritmusok minden orvosi szakterületen meg fogják verni az embereket."
+        }
+    }
+]

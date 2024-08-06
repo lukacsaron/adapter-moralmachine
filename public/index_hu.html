@@ -46,17 +46,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 margin-top-md">
-                    <h1>Welcome to the Moral Compass experiment of Adaptér and Szájensz Szeánsz (Science Séance).</h1>
-                    <p>Over the next 15 minutes, you will encounter dilemmas presented as questions on the screen, for which you should mark the answer you think is correct. Please be advised that you will encounter several provocative answers, which are intended solely to offer a new perspective on each dilemma. The goal of these answers is not to offend but to push you out of your comfort zone.</p>
+                    <h1>Üdvözlünk az Adaptér és a Szájensz Szeánsz morális iránytű kísérletében.</h1>
+                    <p>Az elkövetkező 10 percben kérdésekbe foglalt dilemákkal fogsz találkozni, amelyekre meg kell adnod az érzésed szerinti helyes választ. Figyelmeztetünk, hogy számos provokatív reakcióval fogsz találkozni, melyek arra szolgálnak, hogy egy-egy dilemmát új megvilágításba helyezzenek. A válaszoknak nem célja, hogy megbántsanak, mindössze a komfortzónádból akarnak kizökkenteni.</p>
                 </div>
                 <div class="col-12 col-md-12 margin-top-sm center">
-                    <button id="start" class="btn btn-xl btn-light">Let's start!</button>
+                    <button id="start" class="btn btn-xl btn-light">Kezdjünk bele!</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="questionCounter" class="question-counter">1/10 question</div>
+    <div id="questionCounter" class="question-counter">1/10 kérdés</div>
 
     <div class="overlay left-overlay">
         <img decoding="async" src="https://adapterujbuda.hu/wp-content/uploads/2022/11/adapter_elem_lepcso.png">
@@ -79,10 +79,10 @@
             </div>
         <div id="summaryContainer" class="col-md-10 offset-md-1 center" style="display:none;"></div>
         <div id="thankyou" class="col-md-10 offset-md-1 center margin-bottom" style="display:none;">
-            <h4>You have reached the end.</h4>
-            <p>We apologize for any discomfort caused, however, participating in a social experiment is never easy.</p>
-            <p>If you have any remaining questions or new ones have arisen, please talk to our professional volunteers, or for more details, read our publication "Coded Dilemmas: Daily Challenges and decisions in the age of information," which you can take home with you for free.</p>
-            <button onclick="location.reload();" class="btn btn-xl btn-adapter margin-top-sm" id="reloadButton" style="display:none;">New submission</button>
+            <h4>A végére értél.</h4>
+            <p>Sajnáljuk, ha felidegesítettünk, de nem könnyű részt venni egy társadalmi kísérletben. Ha maradtak, vagy születtek benned kérdések, akkor beszélgess szakmai önkénteseinkkel, vagy további részletekért olvasd el Kódolt dilemmák: életünk kihívásai és döntései az információs korban című kiadványunkat, amelyet ingyen magaddal is vihetsz.</p>
+            <p>Köszönjük, hogy részt vettél az Adaptér és a Szájensz Szeánsz közös társadalmi kísérletében.</p>
+            <button onclick="location.reload();" class="btn btn-xl btn-adapter margin-top-sm" id="reloadButton" style="display:none;">Új kitöltés</button>
         </div>
         </div>
     </div>
@@ -90,9 +90,9 @@
     <div id="navbar" class="container-fluid fixed-bottom">
         <div class="row">
             <div class="col-md-12 center">
-                <button onclick="submitAnswer('yes')" class="btn btn-xl btn-adapter" id="yesButton">Yes</button>
-                <button onclick="submitAnswer('no')" class="btn btn-xl btn-adapter" id="noButton">No</button>
-                <button onclick="proceedToNextQuestion()" class="btn btn-xl btn-adapter btn-inactive" id="nextButton" style="display:none;">Next</button>
+                <button onclick="submitAnswer('yes')" class="btn btn-xl btn-adapter" id="yesButton">Igen</button>
+                <button onclick="submitAnswer('no')" class="btn btn-xl btn-adapter" id="noButton">Nem</button>
+                <button onclick="proceedToNextQuestion()" class="btn btn-xl btn-adapter btn-inactive" id="nextButton" style="display:none;">Tovább</button>
             </div>
         </div>
     </div>
@@ -109,18 +109,18 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Whats your email address?!</p>
+          <p>Add meg az email címed!</p>
           <input type="email" id="emailInput" class="form-control" placeholder="Email">
           <div class="form-check mt-3">
             <input class="form-check-input" type="checkbox" id="dataProtectionCheckbox">
-            <label class="form-check-label" for="dataProtectionCheckbox">I accept the <a href="https://docs.google.com/document/d/1BOYaiE554ISnwzzaT3LSKSiS3n4EyCNh/edit?usp=sharing&ouid=105499393738924252031&rtpof=true&sd=true" target="_blank">GDPR document.</a></label>
-            <small id="emailHelp" class="form-text text-muted">We dont share your email address with anyone.</small>
-            <small id="emailHelp" class="form-text text-muted"></small>
+            <label class="form-check-label" for="dataProtectionCheckbox">Elfogadom az <a href="https://docs.google.com/document/d/1BOYaiE554ISnwzzaT3LSKSiS3n4EyCNh/edit?usp=sharing&ouid=105499393738924252031&rtpof=true&sd=true" target="_blank">adatkezelési nyilatkozatot</a></label>
+            <small id="emailHelp" class="form-text text-muted">A címedet nem adjuk át másnak.</small>
+            <small id="emailHelp" class="form-text text-muted">Nem spammelünk. Havonta max. 1 emailt küldünk az Adaptér programjairól.</small>
 
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-adapter btn-lg btn-block" id="submitEmail">Save</button>
+          <button type="button" class="btn btn-adapter btn-lg btn-block" id="submitEmail">Mentés</button>
         </div>
       </div>
     </div>
