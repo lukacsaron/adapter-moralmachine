@@ -37,7 +37,7 @@ async function loadQuestion(index) {
 
         // Update the question counter
         const questionCounterElement = document.getElementById('questionCounter');
-        questionCounterElement.textContent = `${index + 1}/10 kérdés`;
+        questionCounterElement.textContent = `${index + 1}/10 question`;
 
     } catch (err) {
         console.error('Error loading question:', err);
@@ -159,22 +159,22 @@ async function endSession() {
         const yesPercentage = summaryData.percentages[i] ? summaryData.percentages[i].yes.toFixed(2) : 0;  // converting to 2 decimal places
         const noPercentage = summaryData.percentages[i] ? summaryData.percentages[i].no.toFixed(2) : 0;    // converting to 2 decimal places
 
-        const userAnswerText = userAnswer === "yes" ? "Igen" : (userAnswer === "no" ? "Nem" : "Nem válaszoltál");
+        const userAnswerText = userAnswer === "yes" ? "Yes" : (userAnswer === "no" ? "No" : "Missing response");
 
         summaryHTML += `
         <div class="summary-item">
             <h4>${question}</h4>
-            <div>A te válaszod erre a kérdésre:<span class="bold"> ${userAnswerText}</span></div>
-            <div class="italic">A korábbi felhasználók ilyen arányban válaszoltak:</div>
+            <div>Your response to this questuin:<span class="bold"> ${userAnswerText}</span></div>
+            <div class="italic">Other users responses:</div>
             
             <div class="bar-container">
                 <div class="bar" style="width:0%" data-value="${yesPercentage}">
-                    <span class="bar-label">Igen: ${yesPercentage}%</span>
+                    <span class="bar-label">Yes: ${yesPercentage}%</span>
                 </div>
             </div>
             <div class="bar-container">
                 <div class="bar" style="width:0%" data-value="${noPercentage}">
-                    <span class="bar-label">Nem: ${noPercentage}%</span>
+                    <span class="bar-label">No: ${noPercentage}%</span>
                 </div>
             </div>
         </div>
@@ -400,7 +400,7 @@ document.getElementById('submitEmail').addEventListener('click', function() {
             if (!response.ok) {
                 // Extract more detailed error message from the response body
                 return response.json().then(errorData => {
-                    throw new Error(errorData.error || 'Hiba, nem sikerült menteni az emailt!');
+                    throw new Error(errorData.error || 'Could not save your email address!');
                 });
             }
             return response.json();
@@ -410,7 +410,7 @@ document.getElementById('submitEmail').addEventListener('click', function() {
                 alert('Siker!');
                 $('#summaryModal').modal('hide');
             } else {
-                alert('Hiba, nem sikerült menteni az emailt!');
+                alert('Could not save your email address!');
             }
         })
         .catch(error => {
